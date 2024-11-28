@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Построение системы поддержки принятия решений для природно-хозяйственного обустройства территории Северо-Казахстанской области в контексте устойчивого развития</title>
+    <!--Иконка для сайта-->
+    <link rel="apple-touch-icon" sizes="16x16" href="./icon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./icon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+        <link rel="manifest" href="./icon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="flex">
+    <!-- Фиксированная навигация -->
+<nav class="fixed-nav w-64 bg-primary text-primary-foreground p-4 shadow-lg">
+    <div class="mb-8 text-center">
+        <!-- Логотип сверху -->
+        <img src="Logo-Hub.jpg" alt="Лого" class="w-full h-auto mb-4 shadow-lg" />
+    
+        <!-- Текст под логотипом -->
+        <div>
+            <h2 class="text-lg font-bold text-primary-foreground" >Казахский Национальный Аграрный Иследовательский Университет</h2>
+        </div>
+    </div>
+    
+    <ul class="space-y-2">
+        <li>
+            <a href="#news" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                <img src="favicon-32x32.png" alt="News Icon" class="w-5 h-5 mr-2">
+                <span class="text-left">Новости</span>
+            </a>
+        </li>
+        <li>
+            <a href="#relevance" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                <span class="material-icons">insights</span>
+                <span class="ml-2">Актуальность</span>
+            </a>
+        </li>
+        <li>
+            <a href="#goals" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                <span class="material-icons">flag</span>
+                <span class="ml-2">Цели и Задачи</span>
+            </a>
+        </li>
+        <li>
+            <a href="#expected-results" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                <span class="material-icons">trending_up</span>
+                <span class="ml-2">Ожидаемые результаты</span>
+            </a>
+        </li>
+        <li>
+            <a href="#achieved-results" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                <img src="favicon-12.png" alt="Results Icon" class="w-4 h-4 ">
+                <span class="ml-2">Достигнутые результаты</span>
+            </a>
+        </li>
+        <li>
+            <a href="#project" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                <span class="material-icons">assignment</span>
+                <span class="ml-2">Проект</span>
+            </a>
+        </li>
+        <li>
+            <a href="#team" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                <span class="material-icons">people</span>
+                <span class="ml-2">Команда</span>
+            </a>
+        </li>
+        <li>
+            <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                <span class="material-icons">library_books</span>
+                <span class="ml-2">Публикации</span>
+            </a>
+        </li>
+        <li>
+            <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                <span class="material-icons">library_books</span>
+                <span class="ml-2">Патенты</span>
+            </a>
+        </li>
+        <li>
+            <a href="#info-users" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                <span class="material-icons">info</span>
+                <span class="text-left">Информация для потенциальных пользователей</span>
+            </a>
+        </li>
+    </ul>
+    
+    <!-- Иконки языков -->
+    <div class="header-lang">
+        <a href=""
+           class="lang-item ">KZ</a>
+        <span class="separator">|</span>
+        <a href="main.html"
+           class="lang-item lang-active">RU</a>
+        <span class="separator">|</span>
+        <a href=""
+           class="lang-item ">EN</a>
+    </div>
+
+        <!-- Иконки социальных сетей -->
+    <div class="mt-auto flex justify-between pb-4 space-x-2">
+        <a href="https://www.instagram.com" target="_blank" class="text-secondary-foreground hover:text-accent text-2xl">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="text-secondary-foreground hover:text-accent text-2xl">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.vk.com" target="_blank" class="text-secondary-foreground hover:text-accent text-2xl">
+            <i class="fab fa-vk"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-secondary-foreground hover:text-accent text-2xl">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+</nav>
+
+    <!-- Основной контент -->
+    <main class="ml-64 flex-1 p-8 bg-gradient-to-b from-white via-green-50 to-white text-card-foreground">
+        <!-- Блок с фоновым изображением -->
+        <div class="relative">
+            <img src="fon.jpg" alt="Background Image" class="w-full object-cover" />
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+                <p style="text-align: center;" class="text-4xl font-bold">  Построение системы поддержки принятия решений для природно-хозяйственного обустройства территории Северо-Казахстанской области в контексте устойчивого развития</p> 
+                
+            </div>
+        </div>
+         
+        <!-- Новости -->
+        <section id="news" class="mb-8 card">
+            <div class="section-header">
+                <span class="material-icons text-accent">newspaper</span>
+                <h2 class="text-xl font-bold text-accent ml-2">Новости</h2>
+            </div>
+            <div class="news-carousel">
+                <div class="carousel-wrapper">
+                    <div class="carousel-slide active">
+                        <img src="agrar.jpg" alt="Новость 1" class="carousel-image">
+                        <div class="carousel-content">
+                            <h3 class="carousel-title">Аграрный Университет</h3>
+                            <p class="carousel-date">18.05.1974</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Pole.jpg" alt="Новость 2" class="carousel-image">
+                        <div class="carousel-content">
+                            <h3 class="carousel-title">Поле</h3>
+                            <p class="carousel-date">18.08.2000</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Pshenica.jpg" alt="Новость 3" class="carousel-image">
+                        <div class="carousel-content">
+                            <h3 class="carousel-title">Пшеница</h3>
+                            <p class="carousel-date">18.05.1974</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+
+        <!-- Актуальность -->
+        <section id="relevance" class="mb-8 card">
+            <div class="section-header">
+                <span class="material-icons text-accent">insights</span>
+                <h2 class="text-xl font-bold text-accent ml-2">Актуальность</h2>
+            </div>
+            <p class="mt-4 text-muted-foreground" style="text-indent: 2em;">
+                Устойчивое развитие сельских территорий характеризует, с одной стороны, внешние крупные природные ресурсные ограничения, формирующие отдаленную перспективу, а с другой стороны, определяющие возможности социально-экономического развития сельских сообществ, хозяйствующих субъектов, диверсификации экономики территории, формирование новых видов деятельности и природоохранной инженерии.
+                В основу исследования положена гипотеза о том, что в Северо-Казахстанской области низкие транспортно-коммуникационные, социально-демографические и экономические показатели, которые в свою очередь формируют не достаточный уровень экономического развития области. Ожидается сравнительно низкие показатели устойчивости экономики региона к природно-климатическим, политическим, экономическим колебаниям.                
+            </p>
+            <p class="mt-4 text-muted-foreground" style="text-indent: 2em;">
+                Для достижения поставленных целей планируется применение различных методов, включая геоинформационное картографирование, методы нормализации и агрегирования данных, дистанционное зондирование с использованием стереооптических, мультиспектральных, тепловизионных космических снимков, радиолокационного зондирования, гравиметрии, многокритериальное аналитическое моделирование, методы процессно-аналитической иерархии, построение системы поддержки принятия решений.
+
+            </p>
+        </section>
+    
+        <!-- Цели -->
+        <section id="goals" class="mb-8 card">
+            <div class="section-header">
+                <span class="material-icons text-accent">flag</span>
+                <h2 class="text-xl font-bold text-accent ml-2">Цели и Задачи</h2>
+            </div>
+            <ul class="mt-4 text-muted-foreground list-disc list-inside space-y-2">
+                <li>Разработка устойчивых методов ведения сельского хозяйства.</li>
+                <li>Повышение устойчивости сельскохозяйственных культур к изменениям климата.</li>
+                <li>Сокращение сельскохозяйственных отходов.</li>
+            </ul>
+            <p class="mt-4 text-muted-foreground" style="text-indent: 2em;">Наименование работ, сроки их реализации и результаты:</p>
+            
+                <a href="Календрный план .pdf" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="material-icons">description</span>
+                    <span class="ml-2">Календарный план</span>
+                </a>
+            
+            
+        </section>
+
+        <!-- Ожидаемые результаты -->
+        <section id="expected-results" class="mb-8 card">
+            <div class="section-header">
+                <span class="material-icons text-accent">trending_up</span>
+                <h2 class="text-xl font-bold text-accent ml-2">Ожидаемые результаты</h2>
+            </div>
+            <ul class="mt-4 text-muted-foreground list-decimal list-inside space-y-2">
+                <li>Разработаны концептуальные основы обустройства Северо-Казахстанской области на принципах устойчивого роста.</li>
+                <li>Проведен анализ мировых практик по эффективному освоению территорий на основе пространственно-ландшафтного обустройства земель.</li>
+                <li>Оценены климатические, водные и земельные составляющие освоения территории.</li>
+                <li>Оценены трудовые ресурсы, как основа социально-экономического развития.</li>
+                <li>Оценены транспортно-коммуникационные возможности и доступность услуг.</li>
+                <li>Оценена экономическая эффективность устойчивого развития исследуемых территорий.</li>
+                <li>Создана серия цифровых карт по землепользованию и землеустройству для эффективного пространственно-ландшафтного обустройства территории.</li>
+                <li>Определен вариант пространственно-ландшафтного планирования территории с учетом трудовых и земельных ресурсов, экономического потенциала области.</li>
+                <li>Разработан комплекс мер для устойчивого роста Северо-Казахстанской области на основе привязки существующего или нового каркаса населённых пунктов к земельным и водным ресурсам, с определением необходимых социально-экономических условий.</li>
+                <li>Разработан комплекс мероприятий пространственно-ландшафтного обустройства Северо-Казахстанской области с научно-обоснованными мероприятиями в контексте устойчивого развития.</li>
+                <li>Разработаны проекты методик и инструкции в области планирования и обустройства территории.</li>
+                <li>Разработаны предложения по внесению дополнений в Программу развития территории Северо-Казахстанской области.</li>
+                <li>Зарегистрированы результаты научной и научно-технической деятельности.</li>
+                <li>Реализация программы позволила получить эффективные методы планирования и обустройства территории областей, которые возможно применять на территории других регионов. Соответственно, имеется возможность коммерциализации.</li>
+                <li>Конечные результаты:
+                    <ul class="list-disc list-inside mt-2 ml-4">
+                        <li>Поддержка позитивных экономических, социальных и экологических связей между городскими, пригородными и сельскими районами на основе повышения качества планирования национального и регионального развития.</li>
+                        <li>Инициирование перехода к рациональным моделям потребления и производства для создания рабочих мест, развития местной культуры и производства местной продукции.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- Ожидаемые результаты -->
+        <section id="expectedad-results" class="mb-8 card">
+            <div class="section-header">
+                <span class="material-icons text-accent">trending_up</span>
+                <h2 class="text-xl font-bold text-accent ml-2">Достигнутые результаты</h2>
+            </div>
+            <ul class="mt-4 text-muted-foreground list-decimal list-inside space-y-2">
+               
+                    <ul class="list-disc list-inside mt-2 ml-4">
+                       </ul>
+                </li>
+            </ul>
+        </section>
+
+    
+        <!-- Проект -->
+        <section id="project" class="mb-8 card">
+            <div class="section-header">
+                <span class="material-icons text-accent">assignment</span>
+                <h2 class="text-xl font-bold text-accent ml-2">Проект</h2>
+            </div>
+            <p class="mt-4 text-muted-foreground" style="text-indent: 2em;">
+                В рамках программы планируется провести анализ мировых практик по эффективному освоению территорий на основе пространственно-ландшафтного обустройства земель, оценить климатические, водные и земельные ресурсы с применением современных методов и технологий ГИС и ДЗЗ, в т.ч. с использованием стереооптических, мультиспектральных, тепловизионных космических снимков, радиолокационного зондирования, гравиметрии для формирования цифровой трехмерной модели рельефа и местности. 
+            </p>
+            <p class="mt-2 text-muted-foreground" style="text-indent: 2em;">
+                Также предполагается организация многокритериальной аналитической модели, включающей информационные слои ретроспективных и прогнозных данных во временной дифференциации по трудовым ресурсам, транспортно-коммуникационным возможностям и экономической эффективности устойчивого развития исследуемых территорий. На основе полученных данных будет разработана серия цифровых карт по землепользованию и землеустройству и определен оптимальный вариант пространственно-ландшафтного планирования территории.
+            </p>
+            <p class="mt-2 text-muted-foreground" style="text-indent: 2em;">
+                Планируется разработка адаптивной концепции устойчивого развития природно-хозяйственного обустройства территории Северо-Казахстанской области, включающей комплекс мер и мероприятий, обеспечивающих эффективное управление рисками в условиях изменения климата, геополитической и экономической ситуации, а также наступления стихийных бедствий, негативно влияющих на развитие региона и его экосистему.
+            </p>
+            <p class="mt-2 text-muted-foreground" style="text-indent: 2em;">
+                Ключевыми особенностями программы являются масштабирование ранее разработанных технологий обустройства территории (на основе ГИС, ДЗЗ и методов процессно-аналитической иерархии), создающих условия для развития орошаемого земледелия с использованием талых вод в Северо-Казахстанской области, а также построение системы поддержки принятия решений (DSS) для регионального планирования и обустройства территории. 
+            </p>
+            <p class="mt-2 text-muted-foreground" style="text-indent: 2em;">
+                DSS включает в себя три специальных модуля:
+            </p>
+            <ul class="mt-2 text-muted-foreground list-disc list-inside space-y-1">
+                <li>Потенциал землепользования</li>
+                <li>Риски, связанные с загрязнением и геотехническими опасностями</li>
+                <li>Данные, относящиеся к оценке экономической жизнеспособности существующих объектов</li>
+            </ul>
+            
+            <p class="mt-2 text-muted-foreground" style="text-indent: 2em;">
+                Реализация программы обеспечит:
+            </p>
+            <ul class="mt-2 text-muted-foreground list-disc list-inside space-y-1">
+                <li>Методологию построения цифровых моделей рельефа (ЦМР) и местности (ЦММ) на основе оперативных, актуальных и масштабных данных</li>
+                <li>Организацию многокритериальной аналитической модели</li>
+                <li>Построение системы поддержки принятия решений регионального планирования</li>
+            </ul>            
+        </section>
+
+    
+        <!-- Команда -->
+        <section id="team" class="mb-8 card">
+            <div class="section-header">
+                <span class="material-icons text-accent">people</span>
+                <h2 class="text-xl font-bold text-accent ml-2">Команда</h2>
+            </div>
+
+            <section class="mb-8 card">
+                <a href="https://www.kaznaru.edu.kz/sciences/agrotechnical-hubs" target="_blank"><h2 class="text-center text-2xl font-bold mb-4">Исследовательская группа «НАУЧНО-ОБРАЗОВАТЕЛЬНАЯ ТЕХНОЛОГИЧЕСКАЯ ПЛАТФОРМА»</h2></a>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников -->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Молжигитова Динара Кумарбековна</h3>
+                        <p class="text-xs text-muted">Руководитель программы</p>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo1.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Макашев Ерлан Прмаганбетович</h3>
+                        <p class="text-xs text-muted text-center">Менеджер по IT</p>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Ермеков Фараби Керимбаевич</h3>
+                        <p class="text-xs text-muted">Менеджер по качеству</p>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Сейтбекова Салтанат Турсыновна</h3>
+                        <p class="text-xs text-muted">Менеджер по финансам </p>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Ермекова Асем Сапарбековна</h3>
+                        <p class="text-xs text-muted">Менеджер по международным связам </p>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Ермекова Асем Сапарбековна</h3>
+                        <p class="text-xs text-muted">Менеджер по трудовым ресурсам и технике безопасности </p>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Нурмаханов Абил Абдиманафулы</h3>
+                        <p class="text-xs text-muted">Офис-менеджер </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Аналитическая группа</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Ибрагимов Примкул Шолпанкулович</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Сугирбаев Алим Файзуллаевич</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Ержан Ділмұрат Ержанұлы</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Группа «Обустройство территории»</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Бектурганова Акерке Еденовна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Токбергенов Исмаил Тасанбиевич</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Набиева Динара Нуридиновна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Райев Ернар Берикұлы</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Группа «Экономический анализ»</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Керимова Укиляй Керимовна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Мадиев Галижан Рахимжанович</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Ахметов Кулмаганбет Ахметович</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Бекенова Гульнар Ышановна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Есенгазиева Сауле Копешовна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Рахимжанова Гаухара Муратовна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Жилдикбаева Айжан Наскеновна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Кудайбергенова Айсулу</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Карымсакова Жанар Койшибековна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Жамбулатова Айман Базарбаевна</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Группа «Земельные ресурсы»</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Абдыгалиева Слушаш Сейлбековна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Сарыбаев Омар Абдуллаевич</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Джангарашева Назымкуль Владимировна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Омарбекова Ардак Диханбаевна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Ахметкеримова Гульнура Елеусизовна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Дабылова Бибигул Ережеповна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Мауяева Сандуғаш Тәңірбергенқызы</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Группа «Водные ресурсы»</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Оңласын Ұлжан Қуанышбекқызы</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Даулет Мурат Даулетұлы</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Группа «Климат»</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Мунайтпасова Аида Нургалиевна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Жексенбаева Алия Кажибековна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Мейрамхан Назар</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Тәшім Ержігіт Рүстембекұлы</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Группа «Группа транспорта»</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Орынбаев Нұрсұлтан Маратұлы</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Серикбаева Гаухар Каналбековна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Бектанов Болатбек Кожахметұлы</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Атабай Айбек Дидарұлы</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Жақыпбек Абзал Мауленұлы</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Жолдасбек Әділет</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Рсымбетов Бекзат Амангельдиевич</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Группа «Трудовые ресурсы»</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Кенеспаева Лаура Байырбекқызы</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Айдарханова Гаухар Берікқызы</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Тажиева Дамира Абдигафаровна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Кайранбаева Гаухар Куатовна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Аубакирова Гаухар Болатовна</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Группа «Картография»</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Кусаинова Майра Джумагуловна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Тусупова Баян Халеловна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Мукалиев Жандос Кайратович</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Таменов Тимур Борисович</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Рафиков Тимур Кутыевич</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Арыстанов Асет Амирханович</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Нұрғали Нұрсұлтан Даниярұлы</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Мусаева Асем Таңатқызы</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Есенова Альянура Амангелдіқызы</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Группа «IT»</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Асилбеков Бахытжан Калжанович</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Омарова Перизат Танибердиевна</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Мухамадиев Талгат Шакнович</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8 card">
+                <h2 class="text-center text-2xl font-bold mb-4">Группа «Масштабирования технологии использования талых вод»</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                    <!-- Карточки сотрудников-->
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Топаев Султан Орланович</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Жабаев Аскар Жанбулатович</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Усалинов Еркин Балтабаевич</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Елубаев Дастан Рамазанович</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Телеубай Жанасыл Бағланұлы</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Айнакулов Жарас Жетыбаевич</h3>
+                    </div>
+                    <div class="card border shadow-lg p-2 text-center">
+                        <img src="profile-photo.jpg" alt="Profile Photo" class="w-full h-32 object-cover mb-2">
+                        <h3 class="text-sm font-semibold">Сагинбеков Берик Кутынұлы</h3>
+                    </div>
+                </div>
+            </section>
+        
+            <a href="https://baraev.kz/" target="_blank"><h2 class="text-center text-2xl font-bold mb-4">Над проектом работает группа ученных ТОО «НАУЧНО-ПРОИЗВОДСТВЕННЫЙ ЦЕНТР ЗЕРНОВОГО ХОЗЯЙСТВА ИМЕНИ А.И. БАРАЕВА»</h2></a>
+        </section>
+
+    
+        <!-- Публикации -->
+        <section id="publications" class="mb-8 card">
+            <div class="section-header">
+                <span class="material-icons text-accent">library_books</span>
+                <h2 class="text-xl font-bold text-accent ml-2">Публикации</h2>
+            </div>
+            <p class="mt-4 text-muted-foreground">В рамках реализации программы запланированы следующие публикации и результаты:</p>
+            <ul class="mt-4 text-muted-foreground list-disc list-inside space-y-1">
+                <li>9 (девять) статей и (или) обзоров в рецензируемых научных изданиях по научному направлению программы, входящих в 1 (первый), 2 (второй) и (или) 3 (третий) квартиль по импакт-фактору в базе данных Web of Science и (или) имеющих процентиль по CiteScore в базе данных Scopus не менее 50 (пятидесяти).</li>
+                <li>10 (десять) статей в журналах, рекомендованных КОКНВО.</li>
+                <li>1 (одна) монография, рекомендованная ученым советом КазНАИУ.</li>
+                <li>5 (пять) объектов интеллектуальной собственности (патент; для заявок в области информационных технологий — авторское свидетельство), зарегистрированных в Национальном Институте интеллектуальной собственности Республики Казахстан.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <script src="script.js.js"></script>    
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Построение системы поддержки принятия решений для природно-хозяйственного обустройства территории Северо-Казахстанской области в контексте устойчивого развития</title>
+    <!--Иконка для сайта-->
+    <link rel="apple-touch-icon" sizes="16x16" href="./icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="flex">
+    <!-- Фиксированная навигация -->
+    <nav class="fixed-nav w-64 bg-primary text-primary-foreground p-4 shadow-lg">
+        <div class="mb-8 text-center">
+            <!-- Логотип сверху -->
+            <img src="Logo-Hub.jpg" alt="лого" class="w-full h-auto mb-4 shadow-lg" />
+
+            <!-- Текст под логотипом -->
+            <div>
+                <h2 class="text-lg font-bold text-primary-foreground">Казахский национальный аграрный исследовательский университет</h2>
+            </div>
+        </div>
+
+        <ul class="space-y-2">
+            <li>
+                <a href="#news" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <img src="favicon-32x32.png" alt="News Icon" class="w-5 h-5 mr-2">
+                    <span class="text-left">Новости</span>
+                </a>
+            </li>
+            <li>
+                <a href="#relevance" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="material-icons">insights</span>
+                    <span class="ml-2">Актуальность</span>
+                </a>
+            </li>
+            <li>
+                <a href="#goals" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="material-icons">flag</span>
+                    <span class="ml-2">Цели и Задачи</span>
+                </a>
+            </li>
+            <li>
+                <a href="#expected-results" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="material-icons">trending_up</span>
+                    <span class="ml-2">Ожидаемые результаты</span>
+                </a>
+            </li>
+            <li>
+                <a href="#achieved-results" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <img src="favicon-12.png" alt="Results Icon" class="w-4 h-4 ">
+                    <span class="ml-2">Достигнутые результаты</span>
+                </a>
+            </li>
+            <li>
+                <a href="#project" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="material-icons">assignment</span>
+                    <span class="ml-2">Проект</span>
+                </a>
+            </li>
+            <li>
+                <a href="#team" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="material-icons">people</span>
+                    <span class="ml-2">Команда</span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="material-icons">library_books</span>
+                    <span class="ml-2">Публикации</span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="ml-2"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="ml-2"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="ml-2"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="ml-2"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="ml-2"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="ml-2"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="ml-2"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="ml-2"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="flex items-center p-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/80 transition">
+                    <span class="ml-2"></span>
+                </a>
+            </li>
+        </ul>
+        <!-- ������ ������ -->
+        <div class="header-lang">
+            <a href=""
+               class="lang-item ">KZ</a>
+            <span class="separator">|</span>
+            <a href="main.html"
+               class="lang-item lang-active">RU</a>
+            <span class="separator">|</span>
+            <a href=""
+               class="lang-item ">EN</a>
+        </div>
+        <h>          </h>
+        <!-- ������ ���������� ����� -->
+        <div class="mt-auto flex justify-between pb-4 space-x-2">
+            <a href="https://www.instagram.com" target="_blank" class="text-secondary-foreground hover:text-accent text-2xl">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="text-secondary-foreground hover:text-accent text-2xl">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.vk.com" target="_blank" class="text-secondary-foreground hover:text-accent text-2xl">
+                <i class="fab fa-vk"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="text-secondary-foreground hover:text-accent text-2xl">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </nav>
+    <main class="photo">
+        <img src="kenespaeva.jpg" alt="Фото" />
+        <div class="text-obc" text-size: 2.875rem;>
+            <b>Общие сведения</b>
+            <h1>  Кенеспаева Лаура Байырбеккызы</h1>
+            <h4>Год рождения:18.10.1981.</h4>
+            <h5>
+                Контактные телефоны: : 8 707 911 0432
+
+            </h5>
+            <h6>E-mail: Laura.kenespaeva81@gmail.com</h6>
+            <h5>
+                WhatsApp:8 707 911 0432
+
+            </h5>
+            <h5>
+                Scopus  ID57205169343
+            </h5>
+            <h5>ORCiD:  000-0001-5734-1947</h5>
+            <h5>
+                Researcher ID:GNR-7697-2022
+
+
+            </h5>
+            <b>
+                Образование - высшее
+            </b>
+            <h5>
+                ВУЗ: Казахский национальный университет им. Аль-Фараби, 2002, Специальность:
+                Преподаватель географии и экологии, ЖБ №0034052
+            </h5>
+
+            <h5>
+                ВУЗ: Казахский национальный университет им. Аль-Фараби, 2004, Специальность:
+                Магистр географии, МТБ № 0007850
+
+            </h5>
+            <h5>
+                (2016-2019) Докторант PhD докторантуры при кафедре географии, землеустройства и
+                кадастра факультета географии и природопользования КазНУ им. аль-Фараби по
+                специальности «География»
+            </h5>
+
+
+            <b>Дата и место защиты: </b>
+
+            <b>Опыт работы: </b>
+            <h5>
+                (2005-2007) Преподаватель кафедры географии естественно - географического факультета
+                КазГосЖенПИ.
+
+            </h5>
+            <h5>
+                (2007-2008) Специалист кафедры экономической и социальной географии географического
+                факультета КазНУ им. аль-Фараби.
+            </h5>
+            <h5>
+                (2008-2009) Ассистент кафедры экономической и социальной географии географического
+                факультета КазНУ им. аль-Фараби.
+            </h5>
+            <h5>
+                (2009-2012) Преподаватель кафедры экономической, социальной и политической
+                географии географического факультета КазНУ им. аль-Фараби.
+            </h5>
+            <h5>
+                (с 2012 по настоящее время) старший преподаватель кафедры географии, землеустройства
+                и кадастра факультета географии и природопользования.
+
+
+            </h5>
+            <h5>
+                (2015-2020) Научный сотрудник в «Научно-технологическом парке» РГП на ПХВ «КазНУ
+                им. аль-Фараби».
+
+            </h5>
+            <h5>
+                (2023 по настоящее время) Старший научный сотрудник «Лаборатории
+                геодемографических и социально-экономических исследований» при КазНУ им. альФараби.
+
+            </h5>
+
+
+
+            <b>Научные исследования:</b>
+            <h5>
+                : специалист в области экономической и социальной географии.
+                Имеет труды по территориальной организации населения, геоурбанистике и социальнодемографическим проблемам Республики Казахстан.
+            </h5>
+            <b>Список наиболее значимых публикаций:</b>
+            <h5>
+
+                1.Nyussupova G., Aidarkhanova G., Kenespayeva L., & Kelinbayeva R. (2023). Gender features
+                of the Kazakhstan labour market in the context of sustainable development. Hungarian
+                Geographical Bulletin, 72(1), 59-74. (SJR 0.424, Q2, Процентиль - 68)
+                https://doi.org/10.15201/hungeobull.72.1.4, https://orcid.org/0000-0001-5734-1947 , количество
+                цитирования – 15.
+
+            </h5>
+            <h5>
+
+                2.Nyussupova, G., Kenespayeva, L., Tazhiyeva, D., Kadylbekov, M. Sustainable urban
+                development assessment: Large cities in Kazakhstan. Urbani Izziv, 2022, 33(1), стр. 70-81. DOI:
+                10.5379/urbani-izziv-en-2022-33-01-01 (процентиль в категории Social Sciences: Urban
+                Studies - 61); https://orcid.org/0000-0001-5734-1947 , количество цитирования – 15.
+
+            </h5>
+            <h5>
+
+                3.Nyussupova, G., Aidarkhanova, G., Kenespayeva, L., Kelinbayeva, R. Analysis of Human
+                Capital in the Republic of Kazakhstan through GIS: Regional Aspect. International Journal of
+                Geoinformaticsthis link is disabled, 2022, 18(1), pp. 15–25 (SSJR=0.180, Q4, Процентиль – 17)
+                https://doi.org/10.52939/ijg.v18i1.2099, https://orcid.org/0000-0001-5734-1947, количество
+                цитирования – 5
+            </h5>
+            <h5>
+
+                4.Nyussupova G., Aidarkhanova G., Kadylbekov M., Kenespayeva L., Kelinbayeva R.,
+                Kozhakhmetov B. Nationalization of indicators for sustainable development goals in the Republic
+                of Kazakhstan through geoinformation technologies. GI_Forum, Том 9, Выпуск 1, С. 158-168.
+                2021.DOI:10.1553/GISCIENCE2021_01_S158, https://orcid.org/0000-0001-5734-1947 ,
+                количество цитирования – 10.
+
+            </h5>
+            <h5>
+
+                5.Nyussupova, G., Kalimurzina, A., Kelinbayeva, R., Kairova, S., Kenespayeva, L. Regional
+                Features of Agglomeration and the Antidote to Almaty’s Landlocked Condition. Urban Book
+                Series, pp. 213–224. 2023 DOI: 10.1007/978-3-031-06604-7_12, количество цитирования – 7.
+                6.Нюсупова Г.Н., Айдарханова Г.Б., Кенеспаева Л.Б., Келинбаева Р.Ж., Жумагулов Ч.Б.
+                Анализ влияния миграции на Казахстанский рынок труда с применением ГИС технологий.
+                Социально-демографические проблемы современности и национальные интересы
+                Казахстана / Под ред. академика НАН РК Сатыбалдина А.А. – Алматы: Институт
+                экономики КН МНВО РК, 2023. – 381 с. https://orcid.org/0000-0001-5734-1947 , количество
+                цитирования – 0.
+
+
+
+            </h5>
+            <h5>
+
+                6. Nyussupova, G., Aidarkhanova G., YoungS. S. The impact of the transformation of the
+                economy of the Republic of Kazakhstan on the reproduction of human capital: socio-economic
+                aspect. Studies of the Industrial Geography Commission of the Polish Geographical Society, 35(2),
+                2021, 38-52. https://doi.org/10.24917/20801653.352.3
+
+            </h5>
+            <h5>
+
+                7. Nyussupova, G., Kenespaeva, L., Karagulova, R., Saginbay, O., Aidarkhanova, G. Sociodemographical indicators of an electronic atlas of socio-demographic development of the regions
+                of the republic of Kazakhstan (2018) International Multidisciplinary Scientific GeoConference
+                Surveying Geology and Mining Ecology Management, SGEM, 18 (2.3), pp. 559-566. SJR=0.211.
+
+            </h5>
+            <h5>
+                8. Нюсупова Г.Н., Айдарханова Г.Б., Кенеспаева Л.Б. Гендерные аспекты занятости на
+                рынке труда в Казахстане: пространственный анализ. «Семейно – демографическая и
+                гендерная политика на новом этапе развития Казахстана» - 2022: Международная научная
+                конференция: материалы конференции – г. Астана: НАО «Казахстанский институт
+                общественного развития»: 2023. С. 212-219
+
+
+            </h5>
+            
+            <b>
+                Опыт участия в проектах по фундаментальным, прикладным и инновационным
+                программам и международным грантам.
+            </b>
+
+            <h5>
+
+                1. Исполнитель в научном проекте ГФ AP05132866-OT-18 «Разработка атласной
+                информационной системы комплексного пространственного анализа качества жизни
+                населения регионов Республики Казахстан в рамках реализации программы «Цифровой
+                Казахстан» (2018-2020).
+
+            </h5>
+            <h5>
+
+                2. Исполнитель в научном проекте ПЦФ BR10965247-OT-21 «Анализ факторов и динамики
+                демографических процессов, миграции и урбанизации, обоснование методов и алгоритмов
+                моделирования и прогнозирования, политико-правовых основ регулирования
+                демографических процессов в Казахстане» (2021-2023).
+
+
+            </h5>
+            <h5>
+                3. Ответственный исполнитель ГФ AP19677682 «Комплексная географическая оценка
+                устойчивого развития крупных городов Республики Казахстан» (2023-2025).
+
+            </h5>
+            <h5>
+                4. Исполнитель в научном проекте ПЦФ BR21882122 «Устойчивое развитие природнохозяйственных и социально-экономических систем Западно-Казахстанского региона в
+                контексте зеленого роста: комплексный анализ, концепция, прогнозные оценки и
+                сценарии» (2023-2025).
+
+
+            </h5>
+            <h5>
+                5. Руководитель направления «Трудовые ресурсы» в ПЦФ BR24993222 «Построение
+                системы поддержки принятия решений для природно-хозяйственного обустройства
+                территории Северо-Казахстанской области в контексте устойчивого развития» (2024-2026).
+
+            </h5>
+
+            <b>
+                Патенты и свидетельства авторского права:
+            </b>
+
+            <h5>
+
+                1. Свидетельство о внесении сведений в государственный реестр прав на объекты,
+                охроняемые авторским правом №2614 от 13 ноября 2017 г. «Географические основы
+                исследования человеческого развития Республики Казахстан: социально-демографические
+                аспекты». Авторы: Нюсупова Г.Н., Токбергенова А.А., Кожахметов Б.Т., Кенеспаева Л.Б.,
+                Каирова Ш.Г., Калимурзина А.М., Тажиева Д.А., Аубакирова Г.Б.
+            </h5>
+            <h5>
+                2. Свидетельство о внесении сведений в государственный реестр прав на объекты,
+                охроняемые авторским правом №12873 от 28 октября 2020 г. «Качество жизни населения
+                Республики Казахстан: подходы, оценки, перспективы». Авторы: Нюсупова Г.Н.,
+                Калимурзина А.М., Токбергенова А.А., Актымбаева А.С, Келинбаева Р.Ж., Кайранбаева
+                Г.К., Мусагалиева А.Н., Кенеспаева Л.Б., Тажиева Д.А., Аубакирова Г.Б., Каржаубаев К.К.,
+                Кожахметов Б.Т., Кадылбеков М.К., Айдарханова Г.Б., Мукалиев Ж.К., Жакыпбек А.М.
+
+
+
+            </h5>
+            <h5>
+                3. Свидетельство о внесении сведений в государственный реестр прав на объекты,
+                охроняемые авторским правом № 8959 от «19» марта 2020 года «Территориальная
+                дифференциация качества жизни населения в регионах Республики Казахстан. Учебное
+                пособие. Часть 2.». Авторы: Нюсупова Г.Н., Токбергенова А.А., Актымбаева А.С,
+                Кайранбаева Г.К., Кенеспаева Л.Б., Аубакирова Г.Б.
+
+            </h5>
+            <h5>
+                4. Свидетельство о внесении сведений в государственный реестр прав на объекты,
+                охроняемые авторским правом №51656 от 20 ноября 2024 г. «Серия карт по социальным
+                показателям устойчивости крупных городов Казахстана за 2000-2022 гг.». Нюсупова Г.Н.,
+                Келинбаева Р.Ж., Кенеспаева Л.Б., Тажиева Д.А., Айдарханова Г.Б., Аубакирова Г.Б.,
+                Кайранбаева Г.К.
+            </h5>
+            <h5>
+                5. Свидетельство о внесении сведений в государственный реестр прав на объекты,
+                охроняемые авторским правом №51708 от 21 ноября 2024 г. «Серия карт по экономическим
+                показателям устойчивости крупных городов Казахстана за 2000-2022 гг.». Авторы:
+                Нюсупова Г.Н., Келинбаева Р.Ж., Кенеспаева Л.Б., Тажиева Д.А., Айдарханова Г.Б.,
+                Аубакирова Г.Б., Жакыпбек А.М.
+            </h5>
+            
+            <h5>
+                6. Свидетельство о внесении сведений в государственный реестр прав на объекты,
+                охроняемые авторским правом №51704 от 21 ноября 2024 г. «Серия карт по экологическим
+                показателям устойчивости крупных городов Казахстана за 2000-2022 гг.». Авторы:
+                Нюсупова Г.Н., Келинбаева Р.Ж., Кенеспаева Л.Б., Тажиева Д.А., Мусагалиева А.Н.,
+                Айдарханова Г.Б., Жакыпбек А.М.
+            </h5>
+            <h5>
+                7. Свидетельство о внесении сведений в государственный реестр прав на объекты,
+                охроняемые авторским правом №51572 от 18 ноября 2024 г. «Серия карт по
+                демографическим показателям устойчивости крупных городов Казахстана за 2000-2022 гг.».
+                Авторы: Нюсупова Г.Н., Келинбаева Р.Ж., Кенеспаева Л.Б., Тажиева Д.А., Кайранбаева Г.К.,
+                Аубакирова Г.Б.
+            </h5>
+
+
+        </div>
+
+
+
+
+
+
+    </main>
+    <main class="back-back">
+    
+    <a href="main.html">
+        <img src="back.png" alt="Лого" clss="back-back" href="main.html" />
+      </a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,352 @@
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 10%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 20%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+        --primary: 145 63% 30%; /* темно-зеленый цвет */
+        --primary-foreground: 0 0% 100%; /* белый цвет текста */
+        --secondary: 145 50% 40%; /* чуть светлее зеленый для фоновых элементов */
+        --secondary-foreground: 0 0% 100%;
+        --accent: 145 70% 35%; /* яркий зеленый для акцентов */
+        --accent-foreground: 0 0% 100%;
+        --muted: 145 60% 25%; /* приглушенный зеленый */
+        --muted-foreground: 0 0% 80%;
+    }
+    .dark {
+        --background: 20 14.3% 4.1%;
+        --foreground: 0 0% 95%;
+        --popover: 0 0% 9%;
+        --popover-foreground: 0 0% 95%;
+        --card: 24 9.8% 10%;
+        --card-foreground: 0 0% 95%;
+        --primary: 145 63% 30%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 145 50% 40%;
+        --secondary-foreground: 0 0% 100%;
+        --accent: 145 70% 35%;
+        --accent-foreground: 0 0% 100%;
+        --muted: 145 60% 25%;
+        --muted-foreground: 0 0% 80%;
+    }
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.bg-primary {
+    background-color: hsl(var(--primary));
+}
+
+.text-primary-foreground {
+    color: hsl(var(-primary-foreground));
+}
+
+.text-accent {
+    color: hsl(var(-accent));
+}
+
+/* Фиксированная боковая панель */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16rem; /* Ширина боковой панели */
+    height: 100vh; /* Высота на весь экран */
+    overflow-y: auto; /* Прокрутка при большом количестве пунктов меню */
+    color: hsl(var(--primary, 145 63% 30%));
+
+}
+.material-icons {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+/* Контейнер логотипа и текста */
+.mb-8 {
+    margin: 0; /* Убирает внешние отступы */
+    padding: 0; /* Убирает внутренние отступы */
+    background: none; /* Убирает цвет фона */
+    box-shadow: none; /* Убирает тень контейнера */
+}
+
+/* Логотип */
+.mb-8 img {
+    box-shadow: none; /* Убирает тень */
+    margin: 0; /* Убирает внешние отступы */
+    padding: 0; /* Убирает внутренние отступы */
+    border: none; /* Убирает границы */
+}
+.shadow-lg {
+    box-shadow: none; /* Убирает стандартную тень */
+}
+.fixed-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Разделяет содержимое на блоки */
+    height: 100vh; /* Высота на весь экран */
+}
+
+.social-icons {
+    margin-top: auto; /* Отправляет иконки вниз */
+    display: flex;
+    
+    padding: 10px 0;
+    position: absolute;
+    bottom: 10px; /* Расположение у самого низа */
+    left: 0;
+    width: 100%; /* Растянуть по ширине панели */
+    display: flex;
+    justify-content: space-evenly; /* Равномерное распределение иконок */
+}
+
+/* Стили текста */
+.text-primary-foreground {
+    color: #000000; /* Чёрный текст */
+    font-size: 0.875rem; /* Пример уменьшения размера шрифта */
+    text-align: center; /* Для выравнивания текста по центру */
+    line-height: 1.0; /* Уменьшает расстояние между строками */
+}
+
+.text-muted {
+    color: #0e0b0b; /* Более контрастный серый */
+}
+
+
+.text-secondary-foreground {
+    color: #130d0d; /* Темно-серый текст для лучшего контраста */
+    font-size: 0.725rem; /* Меньший шрифт для подзаголовка */
+}
+
+
+/* Стили для списков */
+ul.list-disc, ul.list-decimal {
+    margin-left: 1.5rem; /* Отступ для списков */
+}
+
+ul.list-inside > li {
+    line-height: 1.6; /* Интерлиньяж для улучшения читаемости */
+}
+
+/* Стили для секций */
+section {
+    
+    margin-bottom: 2rem; /* Отступ между секциями */
+}
+section p {
+    color: #000; /* Чёрный текст для всех секций */
+    line-height: 1.6; /* Увеличивает читаемость */
+}
+section h2, section h3 {
+    color: #026a00; /* Яркий зелёный для акцента */
+}
+
+/* Стили для подзаголовков */
+h2 {
+    color: hsl(var(--accent)); /* Акцентный цвет для подзаголовков */
+    margin-bottom: 0.5rem; /* Отступ под подзаголовком */
+}
+/* Градиентный фон для правой части */
+.bg-gradient-to-b {
+    background: linear-gradient(to bottom, #ffffff, #f0fff4, #ffffff);
+}
+
+/* Убираем отступы вокруг контейнера */
+.background-image {
+    margin: 0;
+    padding: 0;
+}
+
+/* Убираем отступы и делаем изображение на всю ширину */
+.background-image img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    filter: brightness(100%);
+}
+.relative {
+    position: relative;
+}
+
+.header-lang {
+    display: inline-flex;
+    align-items: center; /* Центрируем элементы по вертикали */
+    position: absolute;
+    bottom: 120px; /* Расположить над соцсетями */
+    left: 0;
+    width: 100%; /* Растянуть по ширине панели */
+    text-align: center; /* Центровка содержимого */
+}
+
+.lang-item, .separator {
+    vertical-align: super; /* Поднимаем все элементы немного выше */
+    margin: 0 8px; /* Добавляем пространство между элементами */
+    transform: translateY(40px)
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.object-cover {
+    width: 100%;
+    height: 500px; 
+}
+
+
+/* Стили для карточек */
+/* Стили для карточек */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    padding-right: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left; 
+    color: #000; /* Чёрный текст по умолчанию для карточек */
+}
+
+/* Стили для заголовков и списков внутри карточек */
+.card h2 {
+    text-align: left; /* Выровнять заголовки по левому краю */
+    margin-bottom: 1rem;
+}
+.card h3.text-sm {
+    color: #000; /* Чёрный цвет для имён сотрудников */
+}
+.card p.text-xs.text-muted {
+    color: #555; /* Контрастный серый цвет для должностей */
+}
+
+.card ul {
+    text-align: left; /* Выровнять текст и списки по левому краю */
+    line-height: 1.6;
+    margin: 0; /* Убираем лишние отступы */
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Секция с иконками */
+.section-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid hsl(var(--accent));
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+.section-header .material-icons {
+    font-size: 1.5rem;
+}
+
+
+/* Прогресс-бар для навигации по разделам */
+#relevance::before,
+#goals::before,
+#expected-results::before,
+#project::before,
+#team::before,
+#publications::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: hsl(var(--accent));
+    content: none; /* Убирает полосу */
+}
+
+
+
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .fixed-nav {
+        width: 100%; /* На маленьких экранах боковая панель занимает всю ширину */
+        height: auto; /* Автоматическая высота */
+        position: relative; /* Не фиксируется на экране */
+    }
+
+    .main-content {
+        margin-left: 0; /* Убираем отступ для основного контента */
+        padding-top: 1rem; /* Добавляем отступ сверху для отступа от панели */
+    }
+}
+
+
+.news-carousel {
+    position: relative;
+    max-width: 100%;
+    height: 725px; /* Уменьшенная высота для компактного вида */
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 0 auto; /* Центровка карусели */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 10s linear;
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white; /* Белый цвет для заголовка */
+}
+
+.carousel-date {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: white; /* Белый цвет для даты */
+}
+
+.carousel-slide.active .carousel-image {
+    transform: scale(1.2);
+}
+
+
+
+
+
+

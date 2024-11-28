@@ -1,0 +1,318 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6a6a6a;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh; 
+}
+
+#main {
+    background-color: #fff; 
+    border-radius: 10px;
+    width: 1000px;
+    height: 2000px;
+    margin-top: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #026a00;
+    color: white;
+    border-radius: 10px;
+}
+
+header .logo h1 {
+    font-size: 36px;
+}
+
+header .logo p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.center-block {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 1000px;
+    padding: 40px;
+    margin-top: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-section {
+    text-align: center;
+}
+
+.main-section img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.goals-section {
+    margin-top: 40px;
+}
+
+.goals-section h3 {
+    font-size: 28px;
+    color: #333;
+}
+
+.goals-section p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.info-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.info-item {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.info-item h4 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 16px;
+    color: #666;
+} */
+
+
+/* General Styles */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #3b4d42;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Intro Section with Background Image */
+.intro {
+    position: relative;
+    height: 500px;
+    background: url('fon.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to enhance text readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-content {
+    text-align: center;
+    color: white;
+}
+
+.intro-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.intro-content h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Info Section */
+.info-grid {
+    display: flex;
+    justify-content: space-around;
+    background-color: #d7e6df;
+    padding: 30px;
+}
+
+.info-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.info-card h3 {
+    color: #3b4d42;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Goals Section */
+.goals {
+    padding: 40px;
+    background-color: #e7f0eb;
+}
+
+.goals h3 {
+    font-size: 2rem;
+    color: #3b4d42;
+    margin-bottom: 20px;
+}
+
+.goals ul {
+    list-style: disc inside;
+}
+
+.goals ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Team Section */
+.team {
+    padding: 40px;
+    background-color: #f0f4f2;
+    text-align: center;
+}
+
+.team h3 {
+    font-size: 2rem;
+    color: #3b4d42;
+    margin-bottom: 20px;
+}
+
+.team-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.team-stats .stat {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.team-stats .stat h4 {
+    font-size: 2rem;
+    color: #3b4d42;
+}
+
+.team-stats .stat p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #3b4d42;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+.news-container {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    resize: both; /* Позволяет изменять размер контейнера */
+    overflow: auto;
+}
+
+.news-item {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.news-image {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    transition: transform 8s ease; /* Плавное увеличение изображения */
+}
+
+.news-text {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+
